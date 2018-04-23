@@ -17,13 +17,15 @@
         <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+        
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-7891646353086955",
-        enable_page_level_ads: true
-        });
-    </script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7891646353086955",
+            enable_page_level_ads: true
+            });
+        </script>
+        
     </head>
     <body>
         
@@ -36,7 +38,7 @@
                 
                 <nav id="main">
                     
-                	<?php
+                    <!--
                 	
 						if (isset($_SESSION['u_id'])) {
 							echo '<form action="includes/logout.inc.php" method="POST">
@@ -48,32 +50,35 @@
 						<input type="text" name="uid" placeholder="Username/e-mail">
 						<input type="password" name="pwd" placeholder="password">
 						<button type="submit" name="submit">Login</button></form>
-					<a href="signup.php">Sign up</a>';
-						}
-					?>
+						-->
+						
+					
+						
+					
 					
 					<div>
                     <ul class="wrapper">
                         <li class="current"><a href="index.php">Home</a></li>
                         <li><a href="about.php">Mek/trimtips</a></li>
-                        <li><a href="services.php">Bildatabas</a></li>
+                        <!--<li><a href="services.php">Bildatabas</a></li>-->
+                        <li><a href="signup.php">Sign up</a></li>
                         <!--<li>AVOID COSTLY MISTAKES</li>-->
                         <!--<li>ABOUT</li>-->
-                    </ul
+                    </ul>
                 </div>
             </div>
             </nav>
 
         </header>
 
-        <section id="showcase">
+        <section id="showcase" alt="volvo amazon">
             <div class="container">
                 <h1>Nalta Balubas Racing</h1>
                 <p>MER KVAR I PLÅNBOKEN</p>
             </div>
         </section>
-
-        <section id="newsletter">
+        
+        <!--<section id="newsletter">
             <div class="container">
                 <h1>Subcribe To Our Newsletter</h1>
                 <form>
@@ -82,25 +87,27 @@
                 </form>
             </div>
         </section>
-
+        -->
+            <!--
         <section id="boxes">
             <div class="container">
                 <div class="box">
 
                     <a href="#"> <i class="fa fa-wrench fa-lg" aria-hidden="true"></i></a>
-                    <h3>Mechanics</h3>
-                    <p>Lorum ipsum ehhded kjefnekfje efleferkfgrtg olgfegjkegj lkeg</p>
+                    <h3>Under construction</h3>
+                    <p></p>
                 </div>
                 <div class="box">
-                    <h3>CSS3 Styling</h3>
-                    <p>Lorum ipsum ehhded kjefnekfje efleferkfgrtg olgfegjkegj lkeg</p>
+                    <h3>Same goes here</h3>
+                    <p></p>
                 </div>
                 <div class="box">
-                    <h3>Graphic Design</h3>
-                    <p>Lorum ipsum ehhded kjefnekfje efleferkfgrtg olgfegjkegj lkeg</p>
+                    <h3>Yepp"</h3>
+                    <p></p>
                 </div>
             </div>
         </section>
+        -->
         <!--<section id="social-media">
             <div class="container-area">
                 <div class="boxes">-->
@@ -113,7 +120,7 @@
                 </a>
         <footer>
             <a href="#" class="scrollup">Scroll</a>
-            <p> Copyright &copy; URBAN LINDSTRÖM -2017</p>
+            <p> Copyright &copy; ULindstrom WebDev -2018</p>
         </footer>
         <script>
             const nav = document.querySelector('#main');
@@ -136,22 +143,9 @@
         
         <script>
         
-        
-            $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('.scrollup').fadeIn();
-                } else {
-                    $('.scrollup').fadeOut();
-           }
-       });
-       $('.scrollup').click(function () {
-           $("html, body").animate({
-               scrollTop: 0
-           }, 600);
-           return false;
-       });
-   });
+       
+       
+   
  </script>
         <script type="text/javascript" src="../public/javascript/jquery-3.3.1.slim.min.js"></script>
         <script type="text/javascript" src="../public/javascript/bootstrap.min.js"></script>
