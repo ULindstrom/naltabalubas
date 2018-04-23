@@ -1,13 +1,19 @@
+
+
 body {
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
     padding:0;
     margin:0;
     background-color: #f4f4f4;
 }
 /* Global */
 .container{
+    min-width: 513px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     width:80%;
-    margin:auto;
+    /*margin:auto;*/
     overflow:hidden;
 }
 @font-face {
@@ -19,12 +25,56 @@ body {
    font-family: futura-light;
    src: url(../fonts/Futura.otf);
 }
-
-
-ul{
-    margin:0;
-    padding:0;
+#textcolor {
+    color: red;
 }
+
+ 
+.scrollup {
+   width: 40px;
+   height: 40px;
+   opacity: 0.3;
+   position: fixed;
+   bottom: 50px;
+   right: 100px;
+   display: none;
+   text-indent: -999px;
+   <i class="fa-fa-angle-up") no-repeat;
+ }
+
+.scroll-to-top {
+    background-color: #000000;
+    border-radius: 2px;
+    display: none;
+    position: fixed;
+    right: 35px;
+    top: 94%;
+    text-align: center;
+    z-index: 999px;
+}
+ .page-title{
+ max-width: 650px;
+ margin: auto;
+ padding-top: 30px;
+}
+
+ol{
+    font-size: 14px;
+    padding-bottom:10px;
+    padding-left:38px;
+    max-width: 650px;
+    margin: auto;
+    line-height:1.75em;
+}
+
+li {
+    padding-left: 10px;
+    padding-bottom:10px;
+    max-width:650px;
+}
+ 
+    
+
 
 .button_1{
     height:38px;
@@ -36,21 +86,38 @@ ul{
 }
 
 .dark{
-    padding:25 0 0 0px;
+    
     background:#35424a;
     color:#ffffff;
     margin-top:10px;
     margin-bottom: 10px;
-    /*margin-left: 10px;*/
-    
-    
+    padding-left:30px;
+    max-width: 614px;
+
+
 }
 /* container DIV */
 #container {
-width: 800px;
+max-width: 800px;
 margin: 0px auto;
 background: #FFFFFF;
 padding: 0px;
+float:right;
+}
+/* div {
+    display: block;
+    float: right;
+}
+*/
+#oil{
+    max-width: 650px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.75;
+    max-width: 650px;
+    margin: auto;
 }
 
 #content {
@@ -78,7 +145,7 @@ header{
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
-    border-bottom:#e8491d 3px solid;
+    border-bottom:#e8491d .3px solid;
 }
 
 header a{
@@ -92,25 +159,38 @@ header a{
 header li{
     float:left;
     display:inline;
-    padding:0 20px 0 20px;
+    padding:0 20 0 20;
 }
 
 header #branding{
     float:left;
-    
+
 }
 header #branding h1{
     margin:0;
 }
 
-header nav{
+nav {
+    display:border-box;
     float:right;
-    margin-top: 10px;
+    top:0;
+    
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5 rgba(0,0,0,0.1);
 }
 
 header .highlight, header .current a{
     color:#e8491d;
     font-weight: bold;
+}
+
+
 }
 
 header a:hover{
@@ -121,24 +201,31 @@ header a:hover{
 /*Showcase*/
 
 #showcase{
-    
-    position: relative;
+
+    /*position: relative;*/
     background: #b51212;
     background: linear-gradient(135deg,rgba(181,18,18,.9) 0,#002d77 100%);
     background-image: linear-gradient(135deg,rgba(181,18,18,.9) 0,#002d77 100%);
-    min-height: 400px;
+
     background:url('../img/CRW_6505.jpg') no-repeat 0px;
+    background-attachment: scroll;
+    background-position: center;
     background-size: cover;
     text-align: center;
     color:#ffffff;
+    height: 100vh;
+    min-height: 513px;
 }
 
 #showcase h1{
+    position: relative;
     font-family: din-neuer;
    src: url(../fonts/);
     margin-top:100px;
-    font-size:68px;
+    font-size:70px;
     margin-bottom:-15px;
+    text-align: center;
+
 }
 
 
@@ -165,9 +252,9 @@ header a:hover{
 
 #newsletter input[type="email"]{
     padding:4px;
-    height:25px;
+    height:250px;
     width:250px;
-    
+
 }
 
 /*Boxes*/
@@ -187,7 +274,7 @@ header a:hover{
     position: relative;
     padding-bottom: -10px;
     color: grey;
-    
+
 }
 
 #boxes .box img{
@@ -203,21 +290,30 @@ header a:hover{
 }
 
 /* Main-col */
-#dark ul{
+#dark {
     padding: 20px;
+    margin: auto;
 }
- 
+
 ul {
     /*background: dark;*/
-    padding: 20px;
+    padding: 10px;
+    padding-left:35px;
+    max-width: 618px;
+    margin: auto;
+    padding-bottom:10px;
+    padding-top: 10px;
+    display: block;
 }
 #main-col{
     float:left;
-    width:65%;
+    /*width:65%;*/
+    max-width: 513px;
+    margin: auto;
 }
 footer{
     padding:20px;
-    margin-top:20px;
+    
     color:#ffffff;
     background-color: #e8491d;
     text-align: center;
